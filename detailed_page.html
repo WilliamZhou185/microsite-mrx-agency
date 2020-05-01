@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>DAG Template</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="header">
+
+	<div class="logo_placement"><img src="images/temp_logo.gif"></div>
+    <div class="ad_placement"><img src="images/temp_ad.gif"></div>
+    
+</div>
+
+
+<div class="nav">
+	<ul>
+    	<li><a href="index.html">Home</a></li>
+        <li><a href="listing.html" class="imhere">Team Listing</a></li>
+        <li><a href="news.html">News &amp; Article</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>    </ul>
+</div>
+
+<div class="section detail">
+	
+ 	<div class="article">
+		
+        <div class="detail_info">
+        
+            <div class="addbox">
+            
+            	<h2>Apartment / Condo <span>Not Applicable</span></h2>
+            	<h3><span>3</span> Beds &nbsp;&nbsp;&nbsp;&nbsp; <span>2</span> Baths</h3>
+                <h5>Listed on May 31, 2012</h5>
+            
+            
+            </div>
+        
+        
+        	<h1>Brand New 3.5 Semi-D + Pool + Lift @ J.Limbok</h1>
+			<h4>S$ 3,900,000</h4>
+            <p>S$ 940.00 psf (built in)</p>
+            <p>Jalan Limbok, D19</p>
+        </div>
+        
+        
+        <!-- img gallery :s -->
+        <div class="img_gal_box"><img id="largeImg" alt="Large 1" src="images/img_detail_listing_1.jpg"></div>
+        <ul class="img_th_list">
+        	<li><a href="images/img_detail_listing_1.jpg" title="Listing 1"><img src="images/th_listing_1.jpg"></a></li>
+            <li><a href="images/img_detail_listing_2.jpg" title="Listing 2"><img src="images/th_listing_2.jpg"></a></li>
+            <li><a href="images/img_detail_listing_3.jpg" title="Listing 3"><img src="images/th_listing_3.jpg"></a></li>
+            <li><a href="images/img_detail_listing_4.jpg" title="Listing 4"><img src="images/th_listing_4.jpg"></a></li>
+        </ul>
+        <!-- img gallery :e --></div>
+        
+        
+        
+    <div class="aside">
+    	
+        <!-- print n email :s -->
+        <div class="print_email">
+        	<a class="print_pdf" href="#">Print/PDF</a>
+            <a class="send_mail" href="#">Email</a>
+        </div>
+        <!-- print n email :e -->
+        
+        
+        <!-- announce area :s -->
+        <div class="ann_area">
+        	<p>Contact LandPlus Property<br />
+            	Network Pte. Ltd.
+            </p>
+            <h3>Call 65.9882.8999</h3>
+        </div>
+        <!-- announce area :e -->
+        
+        
+        <!-- location map :s -->
+        <div class="location_map">
+        	<h2>Location</h2>
+            <div><img src="images/temp_map2.gif"></div>
+        </div>
+        <!-- location map :e -->
+        
+        
+        <!-- Nearest Station :s -->
+        <div class="detail_add">
+        	<h2>Nearest MRT Station</h2>
+            <ul>
+            	<li><a href="#">Kovan MRT Station (1.19 Km)</a></li>
+                <li><a href="#">Serangoon MRT Station (1.74 Km)</a></li>
+                <li>Hougan MRT Station (1.959 Km)</li>
+            </ul>
+        </div>
+        <!-- Nearest Station :e -->
+        
+        <!-- Browse Property :s -->
+         <div class="detail_add">
+        	<h2>Browse Property Listings</h2>
+            <ul>
+            	<li><a href="#">All Listings</a></li>
+                <li><a href="#">Condo For Sales</a></li>
+                <li><a href="#">Condo For Rent</a></li>
+                <li><a href="#">HDB Property For Rent</a></li>
+            </ul>
+        </div>
+        <!-- Browse Property  :e -->
+        
+        
+    </div>
+        
+        
+       	
+        
+</section>
+   
+<br /> <br />
+
+</div>
+
+
+<div class="footer">
+	<div class="copyright_area">
+    	<h4>Copyright &copy; 2012 All rights reserved.</h4>
+        <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.</p>
+    </div>
+    
+    <div class="share_area">
+    	<a class="share_fb" href="#"></a> <a class="share_tw" href="#"></a> </div>
+</div>
+
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".img_th_list li a").click(function(){
+	
+		var largePath = $(this).attr("href");
+		var largeAlt = $(this).attr("title");
+		
+		$("#largeImg").attr({ src: largePath, alt: largeAlt });
+		return false;
+		
+	});
+	
+
+});
+</script>
+
